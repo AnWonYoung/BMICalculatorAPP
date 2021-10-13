@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--    Activity를 생성했다면 Manifest에도 추가하기    -->
+        <activity android:name=".ResultActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D673AB7"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- 리니어 안에 같은 리니어 레이아웃 사용이 가능 -->
+    <!-- 세로로만 축을 쌓는 게 아니라 세로+가로 레이아웃을 형성할 때 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI : "
+            android:textColor="#A6673AB7" />
+
+        <TextView
+            android:id="@+id/bmiResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9C27B0"
+            tools:text="bmi 값" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결과는 : "
+            android:textColor="#A6673AB7" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9C27B0"
+            tools:text="bmi 값" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
